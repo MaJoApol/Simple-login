@@ -4,9 +4,10 @@ import {BrowserRouter, Route, Routes} from "react-router-dom"
 export default function Routers(){
     
     return(
-        <BrowserRouter>
+        <BrowserRouter> 
             <Routes>
                 <Route path="LogIn" element={<Login/>}/>
+                <Route index element={<Login />} />
             </Routes>
         </BrowserRouter>
 )}
